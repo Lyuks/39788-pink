@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Илья Кирюшкин](https://up.htmlacademy.ru/adaptive/7/user/39788).
-* Наставник: `Нет наставника`.
+* Наставник: `У меня нет наставника :(`.
 
 ---
 
