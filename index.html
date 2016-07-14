@@ -1,12 +1,177 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pink - main page</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- HEADER -->
+  <header class="page-header">
+    <div class="page-header__top">
+      <div class="page-header__logo">
+        <a href="index.html"><img src="img/logo-pink-white-mobile.svg"></a>
+      </div>
+      <nav class="main-nav">
+        <span class="main-nav__toogle"></span>
+        <ul class="main-nav__items  main-nav__items--hidden">
+          <li class="main-nav__item  main-nav__item--active"><a>Главная</a></li>
+          <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+          <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+          <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="downloads">
+    <div class="downloads__wrapper">
+      <p class="downloads__slogan">Взгляните на жизнь иначе!</p>
+      <a class="downloads__btn" href="#">Скачать приложение</a>
+      <div class="downloads__platforms">
+        <a class="downloads__platform downloads__platform--ios" href="#"></a>
+        <a class="downloads__platform downloads__platform--android" href="#"></a>
+        <a class="downloads__platform downloads__platform--windows" href="#"></a>
+      </div>
+      <p class="downloads__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+    </div>
+  </section>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
 
-  </body>
+<!-- END HEADER -->
+
+  <main>
+    <section class="promo-text">
+      <p>Устали от серости мегаполиса?</p>
+      <p>Нам есть, что вам предложить!</p>
+    </section>
+
+    <section class="features">
+      <div class="features__items">
+        <div class="features__item">
+          <p class="features__title">Поднимает настроение</p>
+          <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </div>
+        <div class="features__item">
+          <p class="features__title">Меняет мир вокруг</p>
+          <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </div>
+        <div class="features__item">
+          <p class="features__title">Заводит новых друзей</p>
+          <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </div>
+      </div>
+      <div class="features__effect">
+        <div class="features__effect-wrapper">
+          <div class="features__effect-title">Эффект на 24 часа</div>
+          <div class="features__effect-text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+          </div>
+          <div class="features__effect-link"><a href="#">Узнать больше об исследовании</a></div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="reviewes">
+      <p class="reviewes__user-name">Николай Петров</p>
+      <p class="reviewes__user-comment  reviewes__user-comment--active">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+      <p class="reviewes__user-info">
+        25 лет, водитель трамвая
+      </p>
+      <div class="switcher">
+        <input class="switcher__input" type="radio" name="user-comment" id="user-comment-1" checked>
+        <input class="switcher__input" type="radio" name="user-comment" id="user-comment-2">
+        <input class="switcher__input" type="radio" name="user-comment" id="user-comment-3">
+        <label class="switcher__toggle" for="user-comment-1"></label>
+        <label class="switcher__toggle" for="user-comment-2"></label>
+        <label class="switcher__toggle" for="user-comment-3"></label>
+      </div>
+    </section>
+
+    <section class="prices">
+      <table class="prices__list">
+        <tr>
+          <td class="prices__title  prices__title--for-desktop"></td>
+          <td class="prices__title">
+            <span class="prices__tariff-name">База</span>
+            <span class="prices__cost">1,99 USD</span>
+          </td>
+          <td class="prices__title  prices__title--hit">
+            <span class="prices__tariff-name">Стандарт</span>
+            <span class="prices__cost">3,99 USD</span>
+          </td>
+          <td class="prices__title">
+            <span class="prices__tariff-name">Анлим</span>
+            <span class="prices__cost">9,99 USD</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="prices__feature  prices__feature--for-desktop">Розовый фильтр</td>
+          <td class="prices__feature  prices__feature--present"><span class="prices__feature--hidden">Розовый фильтр</span></td>
+          <td class="prices__feature  prices__feature--present"><span class="prices__feature--hidden">Розовый фильтр</span></td>
+          <td class="prices__feature  prices__feature--present"><span class="prices__feature--hidden">Розовый фильтр</span></td>
+        </tr>
+        <tr>
+          <td class="prices__feature  prices__feature--for-desktop">Смайлики</td>
+          <td class="prices__feature  prices__feature--absent"><span class="prices__feature--hidden">Смайлики</span></td>
+          <td class="prices__feature  prices__feature--present"><span class="prices__feature--hidden">Смайлики</span></td>
+          <td class="prices__feature  prices__feature--present"><span class="prices__feature--hidden">Смайлики</span></td>
+        </tr>
+        <tr>
+          <td class="prices__feature  prices__feature--for-desktop">Комментарии</td>
+          <td class="prices__feature  prices__feature--absent"><span class="prices__feature--hidden">Комментарии</span></td>
+          <td class="prices__feature  prices__feature--absent"><span class="prices__feature--hidden">Комментарии</span></td>
+          <td class="prices__feature  prices__feature--present"><span class="prices__feature--hidden">Комментарии</span></td>
+        </tr>
+      </table>
+      <div class="switcher">
+        <input class="switcher__input" type="radio" name="tariff" id="base" checked>
+        <input class="switcher__input" type="radio" name="tariff" id="standart">
+        <input class="switcher__input" type="radio" name="tariff" id="unlim">
+        <label class="switcher__toggle" for="base"></label>
+        <label class="switcher__toggle" for="standart"></label>
+        <label class="switcher__toggle" for="unlim"></label>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-page-footer">
+    <p class="main-page-footer__text">
+      Остались вопросы? Свяжитесь с нами!
+    </p>
+    <div class="main-page-footer__contacts">
+      <div class="main-page-footer__item">
+        <p class="main-page-footer__item-text">Звоните</p>
+        <p class="main-page-footer__item-contact"><a href="tel:+78125556666">+7(812)555-66-66</a></p>
+      </div>
+      <div class="main-page-footer__item">
+        <p class="main-page-footer__item-text">Пишите</p>
+        <p class="main-page-footer__item-contact"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+      </div>
+      <div class="main-page-footer__item">
+        <p class="main-page-footer__item-text">Приезжайте в гости</p>
+        <p class="main-page-footer__item-contact">ул. Большая Конюшенная, 19/8</p>
+      </div>
+    </div>
+
+    <div class="on-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.7251190288312!2d30.320858443717263!3d59.93670328442337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x14541b47a2366484!2sSubway!5e0!3m2!1sru!2sru!4v1460448150423" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
+    <section class="main-page-footer__logo">
+      <a href="index.html"><img src="../img/logo-pink-blue-mobile.svg" alt=""></a>
+    </section>
+    <section class="main-page-footer__social">
+      <div class="social-links">
+        <a class="social-link social-link--tw" href="https://vk.com/htmlacademy"><VK/a>
+        <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy"></a>
+        <a class="social-link social-link--yb" href="https://www.instagram.com/htmlacademy"></a>
+      </div>
+    </section>
+    <section class="main-page-footer__copyright">
+      <p class="main-page-footer__copyright-text">Разработано</p> <a class="main-page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+    </section>
+  </footer>
+
+</body>
 </html>
