@@ -1,0 +1,99 @@
+.prices {
+  .container;
+  overflow: hidden;
+  padding-top: 90px;
+  padding-bottom: 50px;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.prices__title {
+  padding: 20px 0;
+  background-color: #283645;
+  color: #fff;
+  border: 2px solid #e5e5e5;
+  border-bottom: none;
+  text-transform: uppercase;
+}
+
+.prices__list {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 840px;
+  box-sizing: border-box;
+  margin-left: -81%;
+}
+
+.prices__tariff-name {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  display: block;
+}
+
+.prices__feature {
+  padding: 20px 0;
+  padding-left: 20px;
+  background: #fff;
+  border: 2px solid #e5e5e5;
+  border-top: none;
+  text-align: left;
+}
+
+.prices__feature--for-desktop,
+.prices__title--for-desktop {
+  display: none;
+}
+
+.prices__feature--hidden {
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+}
+
+.prices__cost {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+@media @tablet-width {
+  .prices__title--for-desktop {
+    display: table-cell;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #e5e5e5;
+  }
+
+  .prices__feature--hidden {
+    opacity: 0;
+  }
+
+  .prices__feature--for-desktop {
+    display: table-cell;
+  }
+
+  .prices__list {
+    width: 625px;
+    margin: 0 auto;
+  }
+
+  .prices__list + .switcher {
+    display: none;
+  }
+
+  .prices__cost {
+    font-size: 18px;
+  }
+}
+
+@media @desktop-width {
+
+  .prices__list {
+    width: 950px;
+  }
+  .prices__feature--for-desktop {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

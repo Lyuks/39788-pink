@@ -1,0 +1,58 @@
+.page-header {
+  .container;
+  .clearfix;
+  position: relative;
+}
+
+.page-header__top {
+  position: absolute;
+  width: 100%;
+  .clearfix;
+  min-height: 65px;
+  z-index: 1;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, .5) 0%,
+    rgba(0, 0, 0, .5) 100%
+    );
+}
+
+.page-header__top--bg-change {
+  background-color: #283645;
+  background-image: none;
+}
+
+
+.page-header__logo {
+  float: left;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+@media @tablet-width {
+  .page-header__top {
+    min-height: 110px;
+  }
+
+  .page-header__logo {
+  float: left;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+  }
+
+@media @desktop-width {
+  .page-header {
+    .container;
+  }
+
+  .page-header__logo {
+    float: left;
+    width: 160px;
+    margin-left: 125px;
+  }
+}
+
+
+
+

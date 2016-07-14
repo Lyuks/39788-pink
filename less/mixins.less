@@ -1,0 +1,28 @@
+.outline(){
+  outline: 4px solid green;
+}
+
+.outline-red(){
+  outline: 4px solid red;
+}
+
+.clearfix {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+
+  @media @tablet-width {
+    width: 700px;
+  }
+  @media @desktop-width {
+    width: 1200px;
+  }
+}
+

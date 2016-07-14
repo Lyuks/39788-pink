@@ -1,0 +1,141 @@
+.features {
+  .container;
+  background: #f2f2f2 url('../img/iphone-screen-mobile.png') no-repeat 50% 100%;
+}
+
+.features__title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.features__effect {
+  display: none;
+}
+
+.features__text {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 40px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+}
+
+.features__items {
+  box-sizing: border-box;
+  height: 780px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+@media @tablet-width {
+  .features {
+    width: 700px;
+    .clearfix;
+    background: #f2f2f2 url('../img/iphone-screen-mobile.png') no-repeat 10% 20%;
+  }
+
+  .features__effect {
+    display: block;
+    padding-top: 100px;
+    padding-bottom: 90px;
+    background-color: #fff;
+  }
+
+  .features__effect-wrapper {
+    margin-left: 50%;
+  }
+
+  .features__text {
+    margin-left: 0;
+  }
+  .features__items {
+    width: 50%;
+    height: 485px;
+    text-align: left;
+    margin-left: 50%;
+  }
+
+  .features__effect-title {
+    width: 47%;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .features__effect-text{
+    width: 85%;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #283645;
+  }
+
+  .features__effect-link a{
+    font-size: 14px;
+    line-height: 24px;
+    color: #d22856;
+  }
+}
+
+@media @desktop-width {
+
+  .features {
+    width: 1200px;
+    background-image: none;
+  }
+
+  .features__items {
+    .container;
+    display: inline-block;
+    height: auto;
+    padding-top: 0;
+    text-align: center;
+
+  }
+
+  .features__item {
+    display: inline-block;
+    padding-top: 350px;
+    margin-top: 0;
+    width: 25%;
+    vertical-align: top;;
+  }
+
+  .features__text {
+    margin: 0 auto;
+    width: 80%;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .features__title {
+    margin-bottom: 25px;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+  }
+
+  .features__effect-wrapper {
+    margin-left: 42%;
+  }
+
+  .features__effect {
+    background: #F2F2F2;
+  }
+
+  .features__effect-text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .features__effect-link a {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+}
+

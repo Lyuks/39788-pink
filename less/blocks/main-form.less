@@ -1,0 +1,487 @@
+.main-form{
+  .container;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-form__title {
+  width: 75%;
+  align-self: center;
+  color: #d22856;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.main-form__title--for-tablet {
+  display: none;
+}
+
+.main-form__user-info-label {
+  margin-left: 12%;
+  margin-top: 25px;
+  text-transform: uppercase;
+  color: #d22856;
+  font-size: 14px;
+  font-weight: 30px;
+  background: #fff;
+}
+
+.main-form__user-info-input {
+  box-sizing: border-box;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10px;
+  padding: 20px;
+  border: none;
+  border: 2px solid #e5e5e5;
+}
+
+.main-form__user-info {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.main-form__user-info-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-form__achievements {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  padding-top: 35px;
+  background-color: #f2f2f2;
+}
+
+.main-form__achievements-label {
+  position: relative;
+  margin-left: 90px;
+  padding-bottom: 65px;
+}
+
+.main-form__achievements-label:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -55px;
+  top: -10px;
+  border: 2px solid #e5e5e5;
+  width: 35px;
+  height: 35px;
+  background: #fff;
+}
+
+.main-form__achievements .main-form__title,
+.main-form__user-apps .main-form__title {
+  margin-bottom: 45px;
+}
+
+.main-form__achievements-checkbox {
+  display: none;
+}
+
+.main-form__user-contacts {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+  background: #fff;
+}
+
+.main-form__user-contacts-label {
+  display: block;
+  margin-left: 14%;
+  margin-bottom: 15px;
+  padding-top: 22px;
+  text-transform: uppercase;
+  color: #d22856;
+  font-size: 14px;
+  font-weight: 30px;
+}
+
+.main-form__user-contacts-input {
+  flex-grow: 1;
+  padding: 20px;
+  margin: 0 5%;
+  border: 2px solid #e5e5e5;
+}
+
+.main-form__user-apps {
+  display: flex;
+  flex-direction: column;
+  padding-top: 35px;
+  background: #F2F2F2;
+}
+
+.main-form__user-apps-label {
+  position: relative;
+  margin-left: 90px;
+  padding-bottom: 65px;
+}
+
+.main-form__user-apps-label:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  left: -70px;
+  top: -10px;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.main-form__user-apps-radio {
+  display: none;
+}
+
+.main-form__user-comment {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding-top: 55px;
+}
+
+.main-form__user-comment-label {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #d22856;
+  text-transform: uppercase;
+}
+
+.main-form__textarea {
+  min-height: 200px;
+  margin: 0 5%;
+  padding-top: 20px;
+  resize: none;
+  border: none;
+  outline: 2px solid #e5e5e5;
+  text-align: center;
+}
+ .main-form__send {
+  width: 90%;
+  margin-top: 45px;
+  padding: 20px 0;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #2aab6d;
+  color: #fff;
+  text-transform: uppercase;
+ }
+
+ .main-form__note {
+  margin-top: 40px;
+  text-transform: uppercase;
+ }
+
+ .main-form__note--hidden {
+  display: none;
+ }
+
+ .main-form__note sup {
+  color: #d22856;
+ }
+
+ .main-form__send-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+  .main-form__user-contacts-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+@media @tablet-width {
+
+  .main-form__user-info {
+    order: 1;
+  }
+
+  .main-form__user-info-wrapper {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .main-form__user-info-label {
+    margin-left: 40px;
+  }
+
+  .main-form__user-info-input {
+    flex-grow: 1;
+  }
+
+  .main-form__user-contacts-wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .main-form__user-contacts-wrapper:first-child {
+    order: 2;
+  }
+
+  .main-form__user-contacts-wrapper:first-child input {
+    margin-top: 45px;
+  }
+
+  .main-form__user-apps-label {
+    margin-bottom: 65px;
+    margin-left: 115px;
+    padding-bottom: 0;
+  }
+
+  .main-form__user-apps-label:before {
+    left: -55px;
+  }
+
+  .main-form__user-contacts {
+    order: 3;
+    flex-direction: column-reverse;
+    position: relative;
+    width: 620px;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding-bottom: 10px;
+    outline: 2px solid #F2F2F2;
+    background: #fff;
+  }
+
+  .main-form__user-contacts-input {
+    box-sizing: border-box;
+    width: 500px;
+    align-self: center;
+  }
+
+  .main-form__send {
+    width: 49%;
+    margin: 0;
+  }
+
+  .main-form__note {
+    margin: 0;
+  }
+
+  .main-form__user-apps {
+    order: 2;
+    position: relative;
+    width: 620px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding-top: 45px;
+    outline: 2px solid #F2F2F2;
+    background: #fff;
+  }
+
+  .main-form__user-apps .main-form__title,
+  .main-form__achievements .main-form__title {
+    position: absolute;
+    top: -25px;
+    left: 125px;
+    background: #fff;
+    width: 58%;
+  }
+
+  .main-form__achievements .main-form__title {
+    width: 70%;
+    left: 90px;
+  }
+
+  .main-form__title--for-tablet {
+    display: block;
+    position: absolute;
+    top: -25px;
+    left: 190px;
+    background: #fff;
+    width: 40%;
+  }
+
+  .main-form__achievements {
+    position: relative;
+    order: 4;
+    width: 620px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    padding-top: 60px;
+    outline: 2px solid #F2F2F2;
+    background: #fff;
+  }
+
+  .main-form__achievements-label {
+    margin-left: 115px;
+  }
+
+  .main-form__textarea {
+    display: block;
+    width: 500px;
+    min-height: 190px;
+    margin: 0 auto;
+  }
+
+  .main-form__user-comment {
+    order: 5;
+    position: relative;
+    width: 620px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    outline: 2px solid #F2F2F2;
+  }
+
+  .main-form__user-comment-label {
+    position: absolute;
+    width: 40%;
+    top: -10px;
+    left: 175px;
+    background: #fff;
+  }
+
+  .main-form__send-wrapper {
+    order: 6;
+    flex-direction: row;
+    width: 620px;
+    margin: 0 auto;
+    margin-top: 65px;
+    margin-bottom: 40px;
+    justify-content: space-between;
+  }
+}
+
+@media @desktop-width {
+
+  .main-form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .main-form__title--for-tablet {
+    width: 27%;
+    left: 342px;
+  }
+
+  .main-form__user-apps {
+    width: 37%;
+    margin-right: 11%;
+  }
+
+  .main-form__user-comment {
+    flex-direction: row;
+    width: 78%;
+  }
+
+  .main-form__user-comment-label {
+    width: 25%;
+    left: 325px;
+  }
+
+  .main-form__user-apps .main-form__title {
+    position: absolute;
+    width: 80%;
+    left: 50px;
+    top: -25px;
+    background: #fff;
+  }
+
+  .main-form__user-info {
+    width: 37%;
+    margin-left: 11%;
+  }
+
+  .main-form__user-info-input {
+    margin-right: 0;
+  }
+
+  .main-form__user-info-label {
+    margin-left: 0;
+  }
+
+  .main-form__user-info-wrapper:last-child {
+    margin-bottom: 0;
+  }
+
+  .main-form__user-contacts {
+    width: 78%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .main-form__user-contacts-input {
+    width: 375px;
+    margin-top: 45px;
+  }
+
+  .main-form__user-contacts-label {
+    margin-left: 4%;
+  }
+
+  .main-form__user-contacts-wrapper:first-child {
+    order: 0;
+    margin-left: 70px;
+  }
+
+  .main-form__user-contacts-wrapper:last-child {
+    margin-right: 70px;
+  }
+
+  .main-form__achievements {
+    width: 78%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .main-form__achievements .main-form__title {
+    width: 45%;
+    left: 250px;
+  }
+
+  .main-form__achievements-label {
+    width: 20%;
+  }
+
+  .main-form__achievements-label:nth-child(3) {
+    order: 2;
+  }
+
+   .main-form__achievements-label:nth-child(5) {
+    order: 5;
+  }
+
+  .main-form__achievements-label:last-child {
+    order: 6;
+  }
+
+  .main-form__user-apps-label {
+    margin-bottom: 50px;
+  }
+
+  .main-form__textarea {
+    flex-grow: 1;
+    box-sizing: border-box;
+    min-height: 125px;
+    padding-left: 20px;
+    margin: 0 6%;
+    text-align: left;
+  }
+
+  .main-form__send {
+    width: 32%;
+  }
+
+  .main-form__send-wrapper {
+    width: 78%;
+  }
+
+  .main-form__note {
+    width: 34%;
+  }
+  .main-form__note--hidden {
+    display: inline;
+  }
+
+}
+
+
