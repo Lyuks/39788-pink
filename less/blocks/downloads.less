@@ -1,0 +1,135 @@
+.downloads {
+  width: 320px;
+    .container;
+  background-color: #1d2631;
+  color: #fff;
+  position: relative;
+  bottom: 0;
+  height: 730px;
+  background-color: #1d2631;
+  background: url('../img/iphone-hand-mobile.png') no-repeat 0% 42%,
+              url('../img/bg-back-mobile.jpg') 50% 0%;
+}
+
+.downloads__wrapper {
+  width: 320px;
+  position: absolute;
+  clear: both;
+  background-color: #1d2631;
+  color: #fff;
+  bottom: 0;
+  background-color: #1d2631;
+}
+
+.downloads__slogan {
+  display: none;
+}
+
+.downloads__text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #d2d3d4;
+  padding: 0 45px;
+}
+
+.downloads__btn {
+  display: block;
+  width: 280px;
+  margin: auto;
+  margin-top: 30px;
+  padding: 20px 0;
+  text-align: center;
+  color: #fff;
+  border: 3px solid white;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  cursor: pointer;
+}
+
+.downloads__platforms {
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 0;
+}
+
+.downloads__platform {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+}
+
+.downloads__platform--android {
+  margin-right: 20px;
+  margin-left: 20px;
+  background: url('../img/logo-android.svg') no-repeat 0 50%;
+}
+
+.downloads__platform--ios {
+  background: url('../img/logo-apple.svg') no-repeat;
+}
+
+.downloads__platform--windows {
+  background: url('../img/logo-microsoft.svg') no-repeat 0 50%;
+}
+
+.downloads__text {
+  text-align: center;
+}
+
+@media @tablet-width {
+  .downloads {
+    background: url('../img/iphone-hand-mobile.png') no-repeat 60% 100%,
+              url('../img/bg-back-mobile.jpg') 50% 0%;
+    height: 850px;
+  }
+
+  .downloads__wrapper {
+    bottom: 80px;
+    background-color: transparent;
+  }
+
+  .downloads__btn {
+    padding: 15px 0;
+    box-sizing: border-box;
+  }
+
+  .downloads__slogan {
+    display: block;
+    margin-top: 0;
+    padding: 0px 60px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 300;
+  }
+
+  .downloads__text {
+    padding: 0 20px;
+    font-size: 18px;
+  }
+}
+
+@media @desktop-width {
+  .downloads__wrapper {
+    left: 125px;
+  }
+
+  .downloads__slogan {
+    margin-bottom: 60px;
+    font-size: 50px;
+  }
+
+  .downloads__btn {
+    width: 305px;
+    font-size: 21px;
+    line-height:18px;
+  }
+  .downloads__platforms {
+    margin-top: 65px;
+    margin-bottom: 60px;
+  }
+}

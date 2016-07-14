@@ -1,11 +1,7 @@
 "use strict";
 
 module.exports = function(grunt) {
-  grunt.loadNpmTasks("grunt-contrib-less");
-  grunt.loadNpmTasks("grunt-browser-sync");
-  grunt.loadNpmTasks("grunt-contrib-watch");
-  grunt.loadNpmTasks("grunt-postcss");
-
+  require("load-grunt-tasks")(grunt);
   grunt.initConfig({
     less: {
       style: {
@@ -16,18 +12,18 @@ module.exports = function(grunt) {
     },
 
     postcss: {
+      options: {
+        processors: [
+          require("autoprefixer")({browsers: [
+            "last 1 version",
+            "last 2 Chrome versions",
+            "last 2 Firefox versions",
+            "last 2 Opera versions",
+            "last 2 Edge versions"
+          ]})
+        ]
+      },
       style: {
-        options: {
-          processors: [
-            require("autoprefixer")({browsers: [
-              "last 1 version",
-              "last 2 Chrome versions",
-              "last 2 Firefox versions",
-              "last 2 Opera versions",
-              "last 2 Edge versions"
-            ]})
-          ]
-        },
         src: "css/*.css"
       }
     },
@@ -51,12 +47,10 @@ module.exports = function(grunt) {
     },
 
     watch: {
-      style: {
-        files: ["less/**/*.less"],
-        tasks: ["less", "postcss"],
-        options: {
-          spawn: false
-        }
+      files: ["less/**/*.less"],
+      tasks: ["less", "postcss"],
+      options: {
+        spawn: false
       }
     }
   });

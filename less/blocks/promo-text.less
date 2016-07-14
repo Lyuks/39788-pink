@@ -1,0 +1,42 @@
+.promo-text {
+  .container;
+  box-sizing: border-box;
+  padding: 1px;
+  color: #283645;
+  text-align: center;
+  font-weight: 300;
+  font-size: 24px;
+  background: #fff;
+}
+
+.promo-text p:last-child {
+  margin-bottom: 0;
+}
+
+@media @tablet-width {
+  .promo-text {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 40px;
+  }
+
+  .promo-text p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .promo-text p:last-child {
+    padding: 0 10%;
+  }
+}
+
+@media @desktop-width {
+  .promo-text {
+    font-size: 50px;
+  }
+
+  .promo-text p:last-child {
+    padding: 0 30%;
+  }
+
+}
